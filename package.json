@@ -4,13 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start":"concurrently \"npm run tsc:w\" \"npm run lite\"",
     "lite": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings",
+    "postinstall": "typings install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "concurrently": "^3.5.0",
     "lite-server": "^2.3.0",
     "typescript": "^2.4.2",
     "typings": "^2.1.1"
