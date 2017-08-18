@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"concurrently \"npm run tsc:w\" \"npm run lite\"",
+    "start": "concurrently \"npm run tsc:w\" \"npm run lite\"",
     "lite": "lite-server",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
@@ -19,5 +19,20 @@
     "lite-server": "^2.3.0",
     "typescript": "^2.4.2",
     "typings": "^2.1.1"
+  },
+  "dependencies": {
+    "@angular/common": "^4.3.5",
+    "@angular/compiler": "^4.3.5",
+    "@angular/core": "^4.3.5",
+    "@angular/forms": "^4.3.5",
+    "@angular/http": "^4.3.5",
+    "@angular/platform-browser": "^4.3.5",
+    "@angular/platform-browser-dynamic": "^4.3.5",
+    "@angular/router": "^4.3.5",
+    "core-js": "^2.5.0",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^5.4.3",
+    "systemjs": "^0.20.17",
+    "zone.js": "^0.8.16"
   }
 }
