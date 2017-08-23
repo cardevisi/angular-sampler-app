@@ -7,14 +7,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 exports.__esModule = true;
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
+var AppComponent = /** @class */ (function () {
     function AppComponent() {
-        this.message = 'Hello there!';
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n\n        {{message}}\n\n    "
+            template: "\n    <div class=\"jumbotron\">\n      <h1>Welcome to Our App!</h1>\n    </div>\n  ",
+            styles: ["\n    .jumbotron { box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2); }\n  "]
         })
     ], AppComponent);
     return AppComponent;
